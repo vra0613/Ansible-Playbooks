@@ -1,0 +1,117 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - usernamePassword:
+          description: "GitHub Credentials"
+          id: "Github"
+          password: "Sairam@0613"
+          scope: GLOBAL
+          username: "vra0613"
+          usernameSecret: true
+tool:
+  gradle:
+   installations:
+    - name: "gradle"
+      properties:
+      - installSource:
+          installers:
+          - gradleInstaller:
+              id: "7.4"
+  groovy:
+   installations:
+    - home: "default"
+      name: "Groovy 2.5.3"
+    - name: "Groovy 4.0.6"
+      properties:
+      - installSource:
+          installers:
+          - groovyInstaller:
+             id: "4.0.6"
+    - name: "Groovy 4.0.9"
+      properties:
+      - installSource:
+          installers:
+          - groovyInstaller:
+              id: "4.0.9"
+  jfrog:
+    installations:
+    - name: "jfrog-cli"
+  maven:
+    installations:
+    - home: "default"
+      name: "maven"
+    - name: "maven-3.5.0"
+      properties:
+      - installSource:
+          installers:
+          - maven:
+              id: "3.5.0"
+    - name: "maven-latest"
+      properties:
+      - installSource:
+          installers:
+          - maven:
+              id: "3.8.1"
+  mavenGlobalConfig:
+    globalSettingsProvider:
+      filePath:
+        path: "/usr/bin/mvn"
+    settingsProvider:
+      filePath:
+        path: "/usr/bin/mvn"
+  nodejs:
+    installations:
+    - name: "NodeJS_7.2.1"
+      properties:
+      - installSource:
+          installers:
+          - nodeJSInstaller:
+              id: "7.2.1"
+              npmPackagesRefreshHours: 72
+    - name: "NodeJS 10.15"
+      properties:
+      - installSource:
+          installers:
+          - nodeJSInstaller:
+              id: "10.15.3"
+              npmPackagesRefreshHours: 72
+    - name: "NodeJS_15.8.0"
+      properties:
+      - installSource:
+          installers:
+          - nodeJSInstaller:
+              id: "15.8.0"
+              npmPackages: "yarn"
+              npmPackagesRefreshHours: 72
+    - name: "NodeJS_17.4.0"
+      properties:
+      - installSource:
+          installers:
+          - nodeJSInstaller:
+              id: "17.4.0"
+              npmPackages: "yarn"
+              npmPackagesRefreshHours: 72
+    - name: "Latest"
+      properties:
+      - installSource:
+          installers:
+          - nodeJSInstaller:
+              id: "20.0.0"
+              npmPackages: "yarn"
+              npmPackagesRefreshHours: 72
+  powerShellInstallation:
+    installations:
+    - home: "powershell.exe"
+      name: "DefaultWindows"
+    - home: "pwsh"
+      name: "DefaultLinux"
+    - name: "powershell"
+  terraform:
+    installations:
+    - name: "terraform"
+      properties:
+      - installSource:
+          installers:
+          - terraformInstaller:
+              id: "1.3.0-windows-amd64"
